@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AK Jewellery | Crafted for Eternity</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #090806;
+      color: #f5efe5;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 25px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #332b20;
+    }
+
+    .logo {
+      color: #d6ad62;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      grid-template-columns: 45% 55%;
+      align-items: center;
+      padding: 60px 7%;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: 80px;
+      font-weight: normal;
+      line-height: 0.9;
+      margin: 20px 0;
+    }
+
+    .gold {
+      color: #d6ad62;
+    }
+
+    .hero p {
+      color: #aaa092;
+      line-height: 1.8;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d6ad62;
+      color: #111;
+      padding: 15px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-height: 650px;
+      object-fit: contain;
+    }
+
+    .section {
+      text-align: center;
+      padding: 100px 7%;
+      border-top: 1px solid #332b20;
+    }
+
+    .section h2 {
+      font-family: Georgia, serif;
+      font-size: 55px;
+      font-weight: normal;
+      margin: 20px 0;
+    }
+
+    .section p {
+      color: #aaa092;
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .product {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      align-items: center;
+      padding: 70px 7%;
+      gap: 50px;
+    }
+
+    .product img {
+      width: 100%;
+    }
+
+    .product h2 {
+      font-family: Georgia, serif;
+      font-size: 55px;
+      font-weight: normal;
+      margin: 15px 0;
+    }
+
+    .product p {
+      color: #aaa092;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid #332b20;
+      color: #888;
+    }
+
+    @media(max-width: 800px) {
+      nav {
+        display: none;
+      }
+
+      .hero,
+      .product {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 60px;
+      }
+
+      .section h2,
+      .product h2 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AK</div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#collection">COLLECTION</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <div>
+    <small class="gold">AK JEWELLERY</small>
+
+    <h1>
+      Crafted for<br>
+      <span class="gold">Eternity.</span>
+    </h1>
+
+    <p>
+      Timeless jewellery crafted with elegance,
+      precision and exceptional attention to detail.
+    </p>
+
+    <a href="#collection" class="btn">
+      EXPLORE COLLECTION
+    </a>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/ring-01.png" alt="AK Jewellery Gold Diamond Ring">
+  </div>
+
+</section>
+
+<section class="section" id="collection">
+
+  <small class="gold">FEATURED COLLECTION</small>
+
+  <h2>Elegance in every detail.</h2>
+
+  <p>
+    Discover the signature jewellery collection
+    from AK Jewellery.
+  </p>
+
+</section>
+
+<section class="product">
+
+  <div>
+    <img src="images/ring-01.png" alt="Gold Diamond Ring">
+  </div>
+
+  <div>
+
+    <small class="gold">SIGNATURE COLLECTION · 01</small>
+
+    <h2>Gold Diamond Ring</h2>
+
+    <p>
+      A sophisticated floral-inspired ring featuring
+      a brilliant centre stone, delicate surrounding
+      stones and a polished gold finish.
+    </p>
+
+    <a href="https://wa.me/" class="btn">
+      ENQUIRE ON WHATSAPP
+    </a>
+
+  </div>
+
+</section>
+
+<section class="section" id="about">
+
+  <small class="gold">THE AK STORY</small>
+
+  <h2>Jewellery with character.</h2>
+
+  <p>
+    AK Jewellery brings together classic elegance
+    and contemporary craftsmanship. Every piece is
+    designed to create a lasting impression.
+  </p>
+
+</section>
+
+<section class="section" id="contact">
+
+  <small class="gold">CONTACT AK JEWELLERY</small>
+
+  <h2>Find your signature piece.</h2>
+
+  <br>
+
+  <a href="https://wa.me/" class="btn">
+    WHATSAPP US
+  </a>
+
+</section>
+
+<footer>
+  © 2026 AK Jewellery · Crafted for Eternity
+</footer>
+
+</body>
+</html>
