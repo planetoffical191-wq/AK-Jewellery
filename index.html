@@ -1,270 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AK Jewellery | Crafted for Eternity</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<title>AK Jewellery | Crafted for Eternity</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#080604;
+    color:#fff;
+}
+
+header{
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 7%;
+    border-bottom:1px solid #3d2b15;
+    background:#0b0805;
+}
+
+.logo{
+    color:#d9aa55;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+nav a{
+    color:#eee;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+nav a:hover{
+    color:#d9aa55;
+}
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding:70px 7%;
+    background:
+    radial-gradient(circle at 80% 50%,#3a2410 0%,#120b06 35%,#080604 70%);
+}
+
+.hero-text{
+    width:45%;
+}
+
+.small{
+    color:#d9aa55;
+    letter-spacing:4px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-family:Georgia,serif;
+    font-size:64px;
+    line-height:1.05;
+    font-weight:normal;
+    margin-bottom:25px;
+}
+
+h1 span{
+    color:#d9aa55;
+}
+
+.hero-text p{
+    color:#bbb;
+    line-height:1.8;
+    max-width:500px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    border:1px solid #d9aa55;
+    color:#d9aa55;
+    text-decoration:none;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#d9aa55;
+    color:#080604;
+}
+
+.hero-image{
+    width:50%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:600px;
+    border-radius:4px;
+    box-shadow:0 20px 70px rgba(0,0,0,.8);
+}
+
+.section{
+    padding:90px 7%;
+    text-align:center;
+}
+
+.section-title{
+    color:#d9aa55;
+    letter-spacing:4px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+h2{
+    font-family:Georgia,serif;
+    font-size:42px;
+    font-weight:normal;
+    margin-bottom:45px;
+}
+
+.product{
+    max-width:420px;
+    margin:auto;
+    background:#100c08;
+    border:1px solid #342513;
+    padding:18px;
+}
+
+.product img{
+    width:100%;
+    display:block;
+}
+
+.product h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+    margin:20px 0 8px;
+}
+
+.product p{
+    color:#999;
+    margin-bottom:20px;
+}
+
+.price{
+    color:#d9aa55;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+.feature{
+    max-width:200px;
+}
+
+.feature-icon{
+    font-size:32px;
+    color:#d9aa55;
+    margin-bottom:15px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#999;
+    line-height:1.6;
+    font-size:14px;
+}
+
+footer{
+    border-top:1px solid #342513;
+    text-align:center;
+    padding:35px;
+    color:#777;
+}
+
+.footer-logo{
+    color:#d9aa55;
+    font-size:22px;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+@media(max-width:800px){
+
+    header{
+        padding:0 5%;
     }
 
-    body {
-      background: #090806;
-      color: #f5efe5;
-      font-family: Arial, sans-serif;
+    nav{
+        display:none;
     }
 
-    header {
-      padding: 25px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #332b20;
+    .hero{
+        flex-direction:column;
+        padding:50px 5%;
     }
 
-    .logo {
-      color: #d6ad62;
-      font-size: 32px;
-      font-weight: bold;
-      letter-spacing: 5px;
+    .hero-text,
+    .hero-image{
+        width:100%;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 30px;
-      font-size: 14px;
+    h1{
+        font-size:45px;
     }
 
-    .hero {
-      min-height: 90vh;
-      display: grid;
-      grid-template-columns: 45% 55%;
-      align-items: center;
-      padding: 60px 7%;
+    .features{
+        gap:40px;
     }
-
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-size: 80px;
-      font-weight: normal;
-      line-height: 0.9;
-      margin: 20px 0;
-    }
-
-    .gold {
-      color: #d6ad62;
-    }
-
-    .hero p {
-      color: #aaa092;
-      line-height: 1.8;
-      max-width: 500px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #d6ad62;
-      color: #111;
-      padding: 15px 28px;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .hero-image img {
-      width: 100%;
-      max-height: 650px;
-      object-fit: contain;
-    }
-
-    .section {
-      text-align: center;
-      padding: 100px 7%;
-      border-top: 1px solid #332b20;
-    }
-
-    .section h2 {
-      font-family: Georgia, serif;
-      font-size: 55px;
-      font-weight: normal;
-      margin: 20px 0;
-    }
-
-    .section p {
-      color: #aaa092;
-      max-width: 650px;
-      margin: auto;
-      line-height: 1.8;
-    }
-
-    .product {
-      display: grid;
-      grid-template-columns: 55% 45%;
-      align-items: center;
-      padding: 70px 7%;
-      gap: 50px;
-    }
-
-    .product img {
-      width: 100%;
-    }
-
-    .product h2 {
-      font-family: Georgia, serif;
-      font-size: 55px;
-      font-weight: normal;
-      margin: 15px 0;
-    }
-
-    .product p {
-      color: #aaa092;
-      line-height: 1.8;
-      margin-bottom: 30px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      border-top: 1px solid #332b20;
-      color: #888;
-    }
-
-    @media(max-width: 800px) {
-      nav {
-        display: none;
-      }
-
-      .hero,
-      .product {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 60px;
-      }
-
-      .section h2,
-      .product h2 {
-        font-size: 42px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">AK</div>
+    <div class="logo">AK JEWELLERY</div>
 
-  <nav>
-    <a href="#home">HOME</a>
-    <a href="#collection">COLLECTION</a>
-    <a href="#about">ABOUT</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
 </header>
+
 
 <section class="hero" id="home">
 
-  <div>
-    <small class="gold">AK JEWELLERY</small>
+    <div class="hero-text">
 
-    <h1>
-      Crafted for<br>
-      <span class="gold">Eternity.</span>
-    </h1>
+        <div class="small">AK JEWELLERY</div>
 
-    <p>
-      Timeless jewellery crafted with elegance,
-      precision and exceptional attention to detail.
-    </p>
+        <h1>
+            Crafted for<br>
+            <span>Eternity.</span>
+        </h1>
 
-    <a href="#collection" class="btn">
-      EXPLORE COLLECTION
-    </a>
-  </div>
+        <p>
+            Discover timeless jewellery crafted with precision,
+            elegance and passion. Every piece tells a story of
+            luxury and everlasting beauty.
+        </p>
 
-  <div class="hero-image">
-    <img src="images/ring-01.png" alt="AK Jewellery Gold Diamond Ring">
-  </div>
+        <a class="btn" href="#collection">
+            EXPLORE COLLECTION
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img src="images/d4286fa0-f0a1-47cc-9e47-550dbe9aac62.png"
+             alt="AK Jewellery Gold Diamond Ring">
+
+    </div>
 
 </section>
+
 
 <section class="section" id="collection">
 
-  <small class="gold">FEATURED COLLECTION</small>
+    <div class="section-title">SIGNATURE COLLECTION</div>
 
-  <h2>Elegance in every detail.</h2>
+    <h2>Featured Jewellery</h2>
 
-  <p>
-    Discover the signature jewellery collection
-    from AK Jewellery.
-  </p>
+    <div class="product">
 
-</section>
+        <img src="images/d4286fa0-f0a1-47cc-9e47-550dbe9aac62.png"
+             alt="Gold Diamond Ring">
 
-<section class="product">
+        <h3>Gold Diamond Ring</h3>
 
-  <div>
-    <img src="images/ring-01.png" alt="Gold Diamond Ring">
-  </div>
+        <p>
+            Elegance in every detail.
+        </p>
 
-  <div>
+        <div class="price">
+            Enquire for Price
+        </div>
 
-    <small class="gold">SIGNATURE COLLECTION · 01</small>
+        <a class="btn" href="#contact">
+            ENQUIRE NOW
+        </a>
 
-    <h2>Gold Diamond Ring</h2>
-
-    <p>
-      A sophisticated floral-inspired ring featuring
-      a brilliant centre stone, delicate surrounding
-      stones and a polished gold finish.
-    </p>
-
-    <a href="https://wa.me/" class="btn">
-      ENQUIRE ON WHATSAPP
-    </a>
-
-  </div>
+    </div>
 
 </section>
+
 
 <section class="section" id="about">
 
-  <small class="gold">THE AK STORY</small>
+    <div class="section-title">WHY AK JEWELLERY</div>
 
-  <h2>Jewellery with character.</h2>
+    <h2>Luxury Without Compromise</h2>
 
-  <p>
-    AK Jewellery brings together classic elegance
-    and contemporary craftsmanship. Every piece is
-    designed to create a lasting impression.
-  </p>
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">◇</div>
+            <h3>Premium Quality</h3>
+            <p>
+                Carefully crafted jewellery with attention to every detail.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">✦</div>
+            <h3>Timeless Design</h3>
+            <p>
+                Elegant designs created to remain beautiful for generations.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">♢</div>
+            <h3>Fine Craftsmanship</h3>
+            <p>
+                Precision and passion come together in every creation.
+            </p>
+        </div>
+
+    </div>
 
 </section>
+
 
 <section class="section" id="contact">
 
-  <small class="gold">CONTACT AK JEWELLERY</small>
+    <div class="section-title">CONTACT AK JEWELLERY</div>
 
-  <h2>Find your signature piece.</h2>
+    <h2>Find Your Signature Piece</h2>
 
-  <br>
+    <p style="color:#999;margin-bottom:30px;">
+        For jewellery enquiries, custom designs and wholesale orders.
+    </p>
 
-  <a href="https://wa.me/" class="btn">
-    WHATSAPP US
-  </a>
+    <a class="btn"
+       href="https://wa.me/"
+       target="_blank">
+       CONTACT ON WHATSAPP
+    </a>
 
 </section>
 
+
 <footer>
-  © 2026 AK Jewellery · Crafted for Eternity
+
+    <div class="footer-logo">AK JEWELLERY</div>
+
+    <p>© 2026 AK Jewellery · Crafted for Eternity</p>
+
 </footer>
 
 </body>
